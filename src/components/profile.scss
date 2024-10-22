@@ -1,0 +1,44 @@
+@import "../scss/base.scss";
+
+.profile-card{
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.name{
+    color: $argentinian-blue;
+}
+
+.job{
+    color: $gray;
+}
+
+.email{
+    color: $gray;
+}
+
+.image-div{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid $argentinian-blue;
+    border-radius: 50%;
+}
+
+.image{
+    height: 500px;
+}

@@ -1,0 +1,26 @@
+@import "../../scss/base.scss";
+
+.header{
+    min-width: 100vw;
+    padding: 20px 200px 20px 200px;
+    position: fixed;
+    background-color: $eire-black;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.header-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px 10px 50px;
+}
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}

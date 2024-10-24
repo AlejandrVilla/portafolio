@@ -1,4 +1,4 @@
-@import "../scss/base.scss";
+@import "../../../scss/base.scss";
 
 .profile-card{
     padding: 100px 0 100px 0;
@@ -6,6 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    min-height: 100vh;
 }
 
 .profile{
@@ -22,6 +23,7 @@
 
 .job{
     color: $gray;
+    max-width: 700px;
 }
 
 .email{

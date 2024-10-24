@@ -1,0 +1,25 @@
+@import "../../scss/base.scss";
+
+.nav-bar-div{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.nav-bar-ul p{
+    color: $ghost-white;
+}
+
+.section-link{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section-link p:hover{
+    color: $argentinian-blue;
+}

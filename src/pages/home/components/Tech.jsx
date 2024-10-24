@@ -1,6 +1,6 @@
-import TechItem from "../components/TechItem.jsx";
-import TechList from "../components/TechList.jsx";
-import { icons } from "../components/utils.jsx";
+import TechItem from "../../../components/specific/TechItem.jsx";
+import TechList from "../../../components/specific/TechList.jsx";
+import { icons } from "../../../utils/info.jsx";
 import "./tech.scss";
 
 const Tech = () => {

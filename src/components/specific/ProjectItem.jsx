@@ -1,19 +1,19 @@
 import "./projectItem.scss";
 
 const ProjectItem = ( props ) => {
-    const imgPath = new URL(props.img, import.meta.url).href;
+    const imgPath = new URL(props.project.img, import.meta.url).href;
 
     return(
         <div className="project-item">
             <div className="project-img-div">
-                <img className="project-img" src={imgPath} alt={props.alt}/>
+                <img className="project-img" src={imgPath} alt={props.project.alt}/>
             </div>
             <div className="project-info">
-                <h3 className="project-title">{props.title}</h3>
-                <p className="project-description">{props.description}</p>
-                <p className="project-tech">Tech stack: {props.tech.join(', ')}</p>
+                <h3 className="project-title">{props.project.title}</h3>
+                <p className="project-description">{props.project.description}</p>
+                <p className="project-tech">Tech stack: {props.project.tech.join(', ')}</p>
                 <div className="project-links">
-                    {props.liveSite 
+                    {props.project.liveSite 
                     && (
                         <div className="div-link">
                             <img 
@@ -21,7 +21,7 @@ const ProjectItem = ( props ) => {
                                 src="/live.svg"
                                 alt="live site"
                             />
-                            <a className="project-link" href={props.liveSite} target="_blank">Live site</a>
+                            <a className="project-link" href={props.project.liveSite} target="_blank">Live site</a>
                         </div>
                     )
                     }
@@ -31,7 +31,7 @@ const ProjectItem = ( props ) => {
                             src="/github.svg"
                             alt="github"
                         />
-                        <a className="project-link" href={props.github} target="_blank">View Code</a>
+                        <a className="project-link" href={props.project.github} target="_blank">View Code</a>
                     </div>
                 </div>
             </div>

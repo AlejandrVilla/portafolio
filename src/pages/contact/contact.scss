@@ -1,0 +1,40 @@
+@import "../../scss/base.scss";
+
+.contact{
+    min-width: 98vw;
+    min-height: 100vh;
+    // margin: 90px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info, .social{
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    // gap: 50px;
+}
+
+.info-title, .social-title{
+    color: $yellow-green;
+}
+
+.info-info, .social-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.info-email, .info-phone{
+    color: $gray3;    
+}
+
+.social-link{
+    color: $argentinian-blue;
+}

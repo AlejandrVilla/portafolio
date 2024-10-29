@@ -3,8 +3,8 @@ import NavBarLinks from "../common/NavBarLinks.jsx";
 import { personalInfo } from "../../utils/info.jsx";
 import "./footer.scss";
 
-const Footer = () => {
-    return(
+const Footer = ({ activeLink, setActiveLink }) => {
+    return (
         <div className="footer">
             <div className="footer-contact">
                 <div className="footer-personal">
@@ -12,7 +12,7 @@ const Footer = () => {
                     <p>{personalInfo.email}</p>
                 </div>
                 <div className="footer-links">
-                    <IconLink 
+                    <IconLink
                         iconUrl={personalInfo.github}
                         url={personalInfo.githubUrl}
                     />
@@ -22,9 +22,12 @@ const Footer = () => {
                     />
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="footer-footer">
-                <NavBarLinks/>
+                <NavBarLinks
+                    activeLink={activeLink}
+                    setActiveLink={setActiveLink}
+                />
                 <p>Designed by: {personalInfo.name}</p>
             </div>
         </div>

@@ -11,6 +11,7 @@ $font-size-h4: 20px;
 $font-weight-p: 300;
 $font-weight-h1: 700;
 $font-weight-h2: 600;
+$font-weight-h4: 400;
 
 p, h1, h2, h3, h4{
     margin: 0;
@@ -39,5 +40,9 @@ h3{
 
 h4{
     font-size: $font-size-h4;
-    font-weight: $font-weight-h2;
+    font-weight: $font-weight-h4;
+}
+
+a{
+    text-decoration: none;
 }

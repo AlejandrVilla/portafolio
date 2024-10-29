@@ -1,0 +1,26 @@
+@import "../../scss/base.scss";
+
+.about{
+    min-width: 98vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 50px;
+}
+
+.education-section{
+    margin: 110px 0 0 0;
+}
+
+.achievements-section, .education-section, .work-section{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.title{
+    color: $yellow-green;
+}

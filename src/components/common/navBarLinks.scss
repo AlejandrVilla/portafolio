@@ -23,3 +23,8 @@
 .section-link p:hover{
     color: $argentinian-blue;
 }
+
+.section-link.active p {
+    color: $argentinian-blue;
+    font-weight: bold;
+}

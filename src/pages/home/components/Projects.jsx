@@ -13,13 +13,7 @@ const Projects = () => {
                     projects.map( (project, index) => (
                         <ProjectItem
                             key={index}
-                            title={project.title}
-                            description={project.description}
-                            tech={project.tech}
-                            img={project.img}
-                            alt={project.alt}
-                            liveSite={project.liveSite}
-                            github={project.github}
+                            project={project}
                         />
                     ))
                 }

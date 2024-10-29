@@ -3,11 +3,14 @@ import { personalInfo } from "../../utils/info.jsx";
 import IconLink from "../common/IconLink.jsx"
 import "./header.scss";
 
-const Header = () => {
+const Header = ({ activeLink, setActiveLink }) => {
     return (
         <div className="header">
             <div className="header-div">
-                <NavBarLinks />
+                <NavBarLinks
+                    activeLink={activeLink}
+                    setActiveLink={setActiveLink}
+                />
                 <div className="header-links">
                     <IconLink
                         iconUrl={personalInfo.github}

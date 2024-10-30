@@ -15,9 +15,9 @@ const Contact = () => {
             <div className="social">
                 <h2 className="social-title">My social network</h2>
                 <div className="social-info">
-                    <a className="social-link" href={personalInfo.linkedinUrl} target="_blank">Linkedin</a>
-                    <a className="social-link" href={personalInfo.githubUrl} target="_blank">Github</a>
-                    <a className="social-link" href={personalInfo.frontendMentorUrl} target="_blank">Frontend Mentor</a>
+                    <a className="social-link pointer" href={personalInfo.linkedinUrl} target="_blank">Linkedin</a>
+                    <a className="social-link pointer" href={personalInfo.githubUrl} target="_blank">Github</a>
+                    <a className="social-link pointer" href={personalInfo.frontendMentorUrl} target="_blank">Frontend Mentor</a>
                 </div>
             </div>
         </Element>

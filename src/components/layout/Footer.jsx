@@ -5,7 +5,7 @@ import "./footer.scss";
 
 const Footer = ({ activeLink, setActiveLink }) => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer-contact">
                 <div className="footer-personal">
                     <p>{personalInfo.phone}</p>
@@ -28,9 +28,9 @@ const Footer = ({ activeLink, setActiveLink }) => {
                     activeLink={activeLink}
                     setActiveLink={setActiveLink}
                 />
-                <p>Designed by: {personalInfo.name}</p>
+                <p>Designed by: me :D</p>
             </div>
-        </div>
+        </footer>
     );
 }
 

@@ -24,7 +24,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
         <nav className="nav-bar">
             <div className="nav-bar-div">
                 <Link
-                    className={`section-link ${activeLink === 'profile' ? 'active' : ''}`}
+                    className={`pointer section-link ${activeLink === 'profile' ? 'active' : ''}`}
                     to="/"
                     onClick={() => {
                         handleScrollToSection('/', 'profile');
@@ -34,7 +34,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                     <p>Home</p>
                 </Link>
                 <Link
-                    className={`section-link ${activeLink === 'tech' ? 'active' : ''}`}
+                    className={`pointer section-link ${activeLink === 'tech' ? 'active' : ''}`}
                     to="/"
                     onClick={() => {
                         handleScrollToSection('/', 'tech');
@@ -44,7 +44,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                     <p>Technologies</p>
                 </Link>
                 <Link
-                    className={`section-link ${activeLink === 'projects' ? 'active' : ''}`}
+                    className={`pointer section-link ${activeLink === 'projects' ? 'active' : ''}`}
                     to="/"
                     onClick={() => {
                         handleScrollToSection('/', 'projects');
@@ -54,7 +54,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                     <p>Projects</p>
                 </Link>
                 <Link
-                    className={`section-link ${activeLink === 'about' ? 'active' : ''}`}
+                    className={`pointer section-link ${activeLink === 'about' ? 'active' : ''}`}
                     to="/about"
                     onClick={() => { 
                         handleScrollToSection('/about', 'about');
@@ -64,7 +64,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                     <p>About</p>
                 </Link>
                 <Link
-                    className={`section-link ${activeLink === 'contact' ? 'active' : ''}`}
+                    className={`pointer section-link ${activeLink === 'contact' ? 'active' : ''}`}
                     to="/contact"
                     onClick={() => { 
                         handleScrollToSection('/contact', 'contact');

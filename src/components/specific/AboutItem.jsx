@@ -1,13 +1,19 @@
 import "./aboutItem.scss";
 
-const AboutItem = ( props ) => {
+const AboutItem = (props) => {
     return (
         <div className="about-item">
             <div className="item">
                 <div className="item-info">
                     {
                         props.item.url ? (
-                            <a className="item-link item-title" href={props.item.url} target="_blank">{props.item.title}</a>
+                            <a
+                                className="item-link item-title pointer"
+                                href={props.item.url}
+                                target="_blank"
+                            >
+                                {props.item.title}
+                            </a>
                         ) : (
                             <p className="item-title">{props.item.title}</p>
                         )
@@ -16,7 +22,7 @@ const AboutItem = ( props ) => {
                 </div>
                 <p className="item-date">{props.item.date}</p>
             </div>
-            <hr/>
+            <hr />
         </div>
     );
 }

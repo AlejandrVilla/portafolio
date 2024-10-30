@@ -5,7 +5,7 @@ import "./header.scss";
 
 const Header = ({ activeLink, setActiveLink }) => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="header-div">
                 <NavBarLinks
                     activeLink={activeLink}
@@ -22,7 +22,7 @@ const Header = ({ activeLink, setActiveLink }) => {
                     />
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
 

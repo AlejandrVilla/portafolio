@@ -1,6 +1,7 @@
 const personalInfo = {
     name: "Alejandro Villa Herrera",
-    job: ["Full Stack developer", "AI", "Algorithms", "Competitive Programming"],
+    // job: ["Full Stack developer", "AI", "Algorithms", "Competitive Programming"],
+    job: ["Computer Scientist", "Full Stack", "Cloud dev", "AI", "Python", "C++", "JavaScript"],
     email: "aleviherrera@gmail.com",
     phone: "+51 950309242",
     profile: "/foto3.jpg",
@@ -26,26 +27,6 @@ const icons = [
         alt: "js"
     },
     {
-        path: "../../../assets/icons/linux.svg",
-        alt: "linux"
-    },
-    {
-        path: "../../../assets/icons/git.svg",
-        alt: "git"
-    },
-    {
-        path: "../../../assets/icons/github.svg",
-        alt: "github"
-    },
-    {
-        path: "../../../assets/icons/vs.svg",
-        alt: "vs"
-    },
-    {
-        path: "../../../assets/icons/vsc.svg",
-        alt: "vsc"
-    },
-    {
         path: "../../../assets/icons/c.svg",
         alt: "c"
     },
@@ -58,8 +39,8 @@ const icons = [
         alt: "python"
     },
     {
-        path: "../../../assets/icons/flask.svg",
-        alt: "flask"
+        path: "../../../assets/icons/golang.svg",
+        alt: "golang"
     },
     {
         path: "../../../assets/icons/react.svg",
@@ -70,6 +51,18 @@ const icons = [
         alt: "angular"
     },
     {
+        path: "../../../assets/icons/flask.svg",
+        alt: "flask"
+    },
+    {
+        path: "../../../assets/icons/mysql.svg",
+        alt: "mysql"
+    },
+    {
+        path: "../../../assets/icons/linux.svg",
+        alt: "linux"
+    },
+    {
         path: "../../../assets/icons/docker.svg",
         alt: "docker"
     },
@@ -78,12 +71,20 @@ const icons = [
         alt: "k8s"
     },
     {
-        path: "../../../assets/icons/golang.svg",
-        alt: "golang"
+        path: "../../../assets/icons/git.svg",
+        alt: "git"
     },
     {
-        path: "../../../assets/icons/mysql.svg",
-        alt: "mysql"
+        path: "../../../assets/icons/github.svg",
+        alt: "github"
+    },
+    {
+        path: "../../../assets/icons/vsc.svg",
+        alt: "vsc"
+    },
+    {
+        path: "../../../assets/icons/vs.svg",
+        alt: "vs"
     },
 ];
 

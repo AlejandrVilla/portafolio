@@ -4,10 +4,10 @@ const personalInfo = {
     job: ["Computer Scientist", "Full Stack", "Cloud dev", "AI", "Python", "C++", "JavaScript"],
     email: "aleviherrera@gmail.com",
     phone: "+51 950309242",
-    profile: "/foto3.jpg",
-    github: "/github.svg",
+    profile: "/img/foto3.jpg",
+    github: "/icons/github.svg",
     githubUrl: "https://github.com/AlejandrVilla",
-    linkedin: "/linkedin.svg",
+    linkedin: "/icons/linkedin.svg",
     linkedinUrl: "https://www.linkedin.com/in/alejandro-villa-herrera-6b8780142/",
     frontendMentorUrl: "https://www.frontendmentor.io/profile/AlejandrVilla",
 
@@ -15,75 +15,75 @@ const personalInfo = {
 
 const icons = [
     {
-        path: "../../../assets/icons/html.svg",
+        path: "/icons/html.svg",
         alt: "html"
     },
     {
-        path: "../../../assets/icons/css.svg",
+        path: "/icons/css.svg",
         alt: "css"
     },
     {
-        path: "../../../assets/icons/js.svg",
+        path: "/icons/js.svg",
         alt: "js"
     },
     {
-        path: "../../../assets/icons/c.svg",
+        path: "/icons/c.svg",
         alt: "c"
     },
     {
-        path: "../../../assets/icons/cpp.svg",
+        path: "/icons/cpp.svg",
         alt: "cpp"
     },
     {
-        path: "../../../assets/icons/python.svg",
+        path: "/icons/python.svg",
         alt: "python"
     },
     {
-        path: "../../../assets/icons/golang.svg",
+        path: "/icons/golang.svg",
         alt: "golang"
     },
     {
-        path: "../../../assets/icons/react.svg",
+        path: "/icons/react.svg",
         alt: "react"
     },
     {
-        path: "../../../assets/icons/angular.svg",
+        path: "/icons/angular.svg",
         alt: "angular"
     },
     {
-        path: "../../../assets/icons/flask.svg",
+        path: "/icons/flask.svg",
         alt: "flask"
     },
     {
-        path: "../../../assets/icons/mysql.svg",
+        path: "/icons/mysql.svg",
         alt: "mysql"
     },
     {
-        path: "../../../assets/icons/linux.svg",
+        path: "/icons/linux.svg",
         alt: "linux"
     },
     {
-        path: "../../../assets/icons/docker.svg",
+        path: "/icons/docker.svg",
         alt: "docker"
     },
     {
-        path: "../../../assets/icons/k8s.svg",
+        path: "/icons/k8s.svg",
         alt: "k8s"
     },
     {
-        path: "../../../assets/icons/git.svg",
+        path: "/icons/git.svg",
         alt: "git"
     },
     {
-        path: "../../../assets/icons/github.svg",
+        path: "/icons/github.svg",
         alt: "github"
     },
     {
-        path: "../../../assets/icons/vsc.svg",
+        path: "/icons/vsc.svg",
         alt: "vsc"
     },
     {
-        path: "../../../assets/icons/vs.svg",
+        path: "/icons/vs.svg",
         alt: "vs"
     },
 ];
@@ -93,7 +93,7 @@ const projects = [
         title: "LLM Project",
         description: "The app responds to user prompts, a user requests for some itinerary or activities he wants and the application searches for places around him, makes some activity plans for the user.",
         tech: ["React", "Flask", "Kubernetes", "Microservices", "Open AI", "Google Maps"],
-        img: "../../assets/img/llmproject.png",
+        img: "/img/llmproject.png",
         alt: "LLM Project",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/LLMproject"
@@ -102,7 +102,7 @@ const projects = [
         title: "Projects in Frontend Mentor",
         description: "My solutions to Frontend Mentor challenges",
         tech: ["HTML", "CSS", "JavaScript", "React"],
-        img: "../../assets/img/frontend_mentor.png",
+        img: "/img/frontend_mentor.png",
         alt: "Frontend Mentor",
         liveSite: "https://www.frontendmentor.io/profile/AlejandrVilla",
         github: "https://github.com/AlejandrVilla/Frontend_Mentor"
@@ -111,7 +111,7 @@ const projects = [
         title: "Blockchain Network",
         description: "A blockchain network based on the Hyperledger Fabric framework: the architecture consists of 4 peers, 2 ordering services, and the Raft consensus algorithm.",
         tech: ["Go", "Shell", "TypeScript"],
-        img: "../../assets/img/fabric.png",
+        img: "/img/fabric.png",
         alt: "Blockchain Network",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/Blockchain-Network"
@@ -120,7 +120,7 @@ const projects = [
         title: "Kafka and Flink pipelines",
         description: "Big Data pipelines for Kafka and Flink. It creates some producers and consumers and uses HDFS as distributed storage.",
         tech: ["Python", "Shell", "Flink", "Kafka"],
-        img: "../../assets/img/Apache-Flink-vs-Kafka.png",
+        img: "/img/Apache-Flink-vs-Kafka.png",
         alt: "Kafka and Flink",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/kafka-flink-pipelines"
@@ -129,7 +129,7 @@ const projects = [
         title: "K8S Ingress and HPA",
         description: "Frontend and Backend developed in Flask as microservices, deployed in K8S with horizontal scaling and Ingress Nginx as load balancer",
         tech: ["K8S", "Python", "Flask"],
-        img: "../../assets/img/k8s2.png",
+        img: "/img/k8s2.png",
         alt: "kubernetes",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/k8s-ingress-hpa-"
@@ -138,7 +138,7 @@ const projects = [
         title: "AKS deploy",
         description: "Deploying and managing containerized applications in a Kubernetes cluster on Azure Kubernetes Service (AKS), using GitHub for version control.",
         tech: ["K8S", "Github actions", "Azure AKS"],
-        img: "../../assets/img/github-actions.png",
+        img: "/img/github-actions.png",
         alt: "Github actions",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/AKS-deploy"
@@ -147,7 +147,7 @@ const projects = [
         title: "UI Bioinformatic",
         description: "User interface to facilitate chain sequencing, alignment and analysis of DNA, RNA and protein chains.",
         tech: ["Python", "Flask"],
-        img: "../../assets/img/bioinformatica.png",
+        img: "/img/bioinformatica.png",
         alt: "UI bioinformatica",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/UI-Bioinformatica"
@@ -156,7 +156,7 @@ const projects = [
         title: "Competitive Programming",
         description: "Solutions for problems in different platforms: Codeforces, Uva and Kattis.",
         tech: ["C++", "C", "Algorithms", "Data Structures"],
-        img: "../../assets/img/grafos.png",
+        img: "/img/grafos.png",
         alt: "Competitive programming",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/Competitive_Programming"
@@ -165,7 +165,7 @@ const projects = [
         title: "Database Manager",
         description: "Relational database in C++ with support for CRUD operations and basic SQL queries, optimizing performance through an efficient indexing and storage engine. The architecture allows handling multiple concurrent connections.",
         tech: ["C++", "Parallel Programming"],
-        img: "../../assets/img/BBDD.png",
+        img: "/img/BBDD.png",
         alt: "Database project",
         liveSite: null,
         github: "https://github.com/AlejandrVilla/BD-II-gestor"

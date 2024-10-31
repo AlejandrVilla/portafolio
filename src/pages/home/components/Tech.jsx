@@ -12,10 +12,10 @@ const Tech = () => {
             <TechList>
                 {
                     icons.map( (icon, index) => {
-                        const iconPath = new URL(icon.path, import.meta.url).href;
+                        // const iconPath = new URL(icon.path, import.meta.url).href;
                         return <TechItem
                             key={index}
-                            path={iconPath}
+                            path={icon.path}
                             alt={icon.alt}
                         />;
                     })

@@ -1,4 +1,4 @@
-@import "../../scss/base.scss";
+@use "../../scss/base.scss" as base;
 
 .about-item{
     width: 100%;
@@ -34,14 +34,14 @@
 }
 
 .item-title{
-    font-weight: $font-weight-h4;
+    font-weight: base.$font-weight-h4;
 }
 
 .item-description{
-    color: $gray3;
+    color: base.$gray3;
 }
 
 .item-link{
-    color: $argentinian-blue;
-    font-weight: $font-weight-h4;
+    color: base.$argentinian-blue;
+    font-weight: base.$font-weight-h4;
 }

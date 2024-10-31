@@ -1,4 +1,4 @@
-@import "../../../scss/base.scss";
+@use "../../../scss/base.scss" as base;
 
 .profile-card{
     padding: 100px 0 100px 0;
@@ -18,16 +18,16 @@
 }
 
 .name{
-    color: $yellow-green;
+    color: base.$yellow-green;
 }
 
 .job{
-    color: $gray;
+    color: base.$gray;
     max-width: 700px;
 }
 
 .email{
-    color: $gray;
+    color: base.$gray;
 }
 
 .image-div{
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 5px solid $yellow-green;
+    border: 5px solid base.$yellow-green;
     border-radius: 50%;
 }
 

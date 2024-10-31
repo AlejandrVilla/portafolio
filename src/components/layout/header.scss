@@ -1,10 +1,10 @@
-@import "../../scss/base.scss";
+@use "../../scss/base.scss" as base;
 
 .header{
     min-width: 100vw;
     padding: 20px 200px 20px 200px;
     position: fixed;
-    background-color: $eire-black;
+    background-color: base.$eire-black;
     display: grid;
     grid-template-rows: auto;
 }

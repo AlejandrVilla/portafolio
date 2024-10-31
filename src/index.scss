@@ -1,5 +1,5 @@
-@import "./scss/base.scss";
+@use "./scss/base.scss" as base;
 
 #root{
-    background-color: $eire-black;
+    background-color: base.$eire-black;
 }

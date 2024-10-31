@@ -1,4 +1,4 @@
-@import "../../scss/base.scss";
+@use "../../scss/base.scss" as base;
 
 .nav-bar-div{
     list-style: none;
@@ -12,20 +12,18 @@
 }
 
 .nav-bar-ul p{
-    color: $ghost-white;
+    color: base.$ghost-white;
 }
 
 .section-link{
-    // cursor: pointer;
-    // cursor:url("./sable_rojo.png"), auto;
     text-decoration: none;
 }
 
 .section-link p:hover{
-    color: $argentinian-blue;
+    color: base.$argentinian-blue;
 }
 
 .section-link.active p {
-    color: $argentinian-blue;
+    color: base.$argentinian-blue;
     font-weight: bold;
 }

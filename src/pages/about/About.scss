@@ -24,3 +24,14 @@
 .title{
     color: base.$yellow-green;
 }
+
+@media (width <= 800px){
+    .title{
+        font-size: base.$font-size-h4;
+        font-weight: base.$font-weight-h2;
+        text-align: center;
+    }
+    .achievements-section, .education-section, .work-section{
+        width: 300px;
+    }
+}

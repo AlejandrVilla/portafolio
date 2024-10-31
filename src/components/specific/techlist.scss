@@ -1,8 +1,15 @@
 .techlist{
-    min-width: 98vw;
+    width: 98vw;
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 50px;
     justify-items: center;
     padding: 100px;
+}
+
+@media (width <= 800px){
+    .techlist{
+        padding: 50px 0 50px 0;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }

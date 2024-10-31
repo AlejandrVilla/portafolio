@@ -1,0 +1,22 @@
+@use "../../scss/base.scss" as base;
+
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.menu-icon{
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+}
+
+.sidebar-nav-div{
+    padding: 10px 25px 10px 25px;
+    position: fixed;
+    background-color: base.$gray2;
+    border-radius: 5px;
+    left: 30px;
+    z-index: 2;
+}

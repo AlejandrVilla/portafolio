@@ -3,7 +3,7 @@ import NavBarLinks from "../common/NavBarLinks.jsx";
 import { personalInfo } from "../../utils/info.jsx";
 import "./footer.scss";
 
-const Footer = ({ activeLink, setActiveLink }) => {
+const Footer = ({ activeLink, setActiveLink, isSmallScreen }) => {
     return (
         <footer className="footer">
             <div className="footer-contact">
@@ -24,10 +24,13 @@ const Footer = ({ activeLink, setActiveLink }) => {
             </div>
             <hr />
             <div className="footer-footer">
-                <NavBarLinks
-                    activeLink={activeLink}
-                    setActiveLink={setActiveLink}
-                />
+                {
+                    !isSmallScreen &&
+                    <NavBarLinks
+                        activeLink={activeLink}
+                        setActiveLink={setActiveLink}
+                    />
+                }
                 <p>Designed by: me :D</p>
             </div>
         </footer>

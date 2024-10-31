@@ -1,8 +1,8 @@
 @use "../../scss/base.scss" as base;
 
 .header{
-    min-width: 100vw;
-    padding: 20px 200px 20px 200px;
+    min-width: 98vw;
+    padding: 20px 0 20px 0;
     position: fixed;
     background-color: base.$eire-black;
     display: grid;
@@ -23,4 +23,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+}
+
+@media (width <= 800px){
+    .header-div{
+        margin: 10px 25px 10px 25px;
+    }
 }

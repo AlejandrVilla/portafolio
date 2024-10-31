@@ -6,14 +6,24 @@ import "./App.scss";
 import { routes } from "./routerConfig.jsx";
 
 const App = () => {
-  const [activeLink, setActiveLink] = useState(null); 
-  
+  const [activeLink, setActiveLink] = useState(null);
+  const [isSmallScreen,] = useState(window.innerWidth < 800);
+  const [menuIsActive, setMenuIsActive] = useState(false);
+
+  const closeAll = () => {
+    setMenuIsActive(false);
+  }
+
   return (
-    <div className="app">
+    <div className="app" onClick={closeAll}>
       <Router>
         <Header
           activeLink={activeLink}
-          setActiveLink={setActiveLink} />
+          setActiveLink={setActiveLink}
+          isSmallScreen={isSmallScreen}
+          menuIsActive={menuIsActive}
+          setMenuIsActive={setMenuIsActive}
+        />
         <Routes>
           {
             routes.map((route, index) => (
@@ -24,6 +34,7 @@ const App = () => {
         <Footer
           activeLink={activeLink}
           setActiveLink={setActiveLink}
+          isSmallScreen={isSmallScreen}
         />
       </Router>
     </div>

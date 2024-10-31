@@ -38,3 +38,23 @@
 .social-link{
     color: base.$argentinian-blue;
 }
+
+@media (width <= 800px){
+    .contact{
+        margin: 0 0 50px 0;
+        flex-direction: column;
+    }
+    .info, .social{
+        height: 200px;
+    }
+    .info-title, .social-title{
+        font-size: base.$font-size-h4;
+    }
+    .info-email, .info-phone{
+        font-size: base.$font-size-p;
+    }
+    
+    .social-link{
+        font-size: base.$font-size-p;
+    }
+}

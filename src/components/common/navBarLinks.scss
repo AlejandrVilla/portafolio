@@ -4,7 +4,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: clamp(40px, 5vw, 100px);
     align-items: center;
     margin: 0;
     padding: 0;
@@ -26,4 +26,11 @@
 .section-link.active p {
     color: base.$argentinian-blue;
     font-weight: bold;
+}
+
+@media (width <= 800px){
+    .nav-bar-div{
+        flex-direction: column;
+        gap: 15px;
+    }
 }

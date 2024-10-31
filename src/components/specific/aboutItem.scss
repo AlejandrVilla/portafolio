@@ -45,3 +45,24 @@
     color: base.$argentinian-blue;
     font-weight: base.$font-weight-h4;
 }
+
+@media (width <= 800px){
+    .item{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .item-info{
+        width: 300px;
+    }
+    .item-title{
+        text-align: center;
+        font-size: base.$font-size-p-mini;
+    }
+    .item-description{
+        text-align: center;
+        font-size: base.$font-size-p-mini;
+    }
+    .item-date{
+        font-size: base.$font-size-p-mini;
+    }
+}

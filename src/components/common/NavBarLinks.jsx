@@ -1,29 +1,18 @@
-import { Link, useNavigate } from "react-router-dom";
-import { scroller } from 'react-scroll';
+import { Link } from "react-router-dom";
 import "./navBarLinks.scss";
-import { useEffect } from "react";
 
-const NavBarLinks = ({ activeLink, setActiveLink }) => {
-    const navigate = useNavigate();
-    
-    const handleScrollToSection = (page, section) => {
-        setActiveLink(section);
-        navigate(page);
-        setTimeout(() => {
-            scroller.scrollTo(section, {
-                smooth: true,
-                duration: 500,
-            });
-        }, 200);
-    };
-
-    useEffect(() => {
-        handleScrollToSection('/', activeLink);
-    }, [])
-
-    const handleLinkClick = (link) => {
+const NavBarLinks = ({
+    activeLink,
+    setActiveLink,
+    activePage,
+    setActivePage,
+    handleScrollToSection
+}) => {
+    const handleLinkClick = (page, link) => {
         setActiveLink(link);
+        setActivePage(page);
     };
+    console.log(`page ${activePage}`);
 
     return (
         <nav className="nav-bar-div">
@@ -32,7 +21,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'profile');
-                    handleLinkClick('profile');
+                    handleLinkClick('/', 'profile');
                 }}
             >
                 <p>Home</p>
@@ -42,7 +31,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'tech');
-                    handleLinkClick('tech');
+                    handleLinkClick('/', 'tech');
                 }}
             >
                 <p>Technologies</p>
@@ -52,7 +41,7 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'projects');
-                    handleLinkClick('projects');
+                    handleLinkClick('/', 'projects');
                 }}
             >
                 <p>Projects</p>
@@ -60,9 +49,9 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
             <Link
                 className={`pointer section-link ${activeLink === 'about' ? 'active' : ''}`}
                 to="/about"
-                onClick={() => { 
+                onClick={() => {
                     handleScrollToSection('/about', 'about');
-                    handleLinkClick('about') 
+                    handleLinkClick('/about', 'about')
                 }}
             >
                 <p>About</p>
@@ -70,9 +59,9 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
             <Link
                 className={`pointer section-link ${activeLink === 'contact' ? 'active' : ''}`}
                 to="/contact"
-                onClick={() => { 
+                onClick={() => {
                     handleScrollToSection('/contact', 'contact');
-                    handleLinkClick('contact') 
+                    handleLinkClick('/contact', 'contact')
                 }}
             >
                 <p>Contact</p>

@@ -3,7 +3,14 @@ import NavBarLinks from "../common/NavBarLinks.jsx";
 import { personalInfo } from "../../utils/info.jsx";
 import "./footer.scss";
 
-const Footer = ({ activeLink, setActiveLink, isSmallScreen }) => {
+const Footer = ({
+    activeLink,
+    setActiveLink,
+    isSmallScreen,
+    activePage,
+    setActivePage,
+    handleScrollToSection
+}) => {
     return (
         <footer className="footer">
             <div className="footer-contact">
@@ -29,6 +36,9 @@ const Footer = ({ activeLink, setActiveLink, isSmallScreen }) => {
                     <NavBarLinks
                         activeLink={activeLink}
                         setActiveLink={setActiveLink}
+                        activePage={activePage}
+                        setActivePage={setActivePage}
+                        handleScrollToSection={handleScrollToSection}
                     />
                 }
                 <p>Designed by: me :D</p>

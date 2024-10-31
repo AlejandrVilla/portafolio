@@ -1,10 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
 import { scroller } from 'react-scroll';
 import "./navBarLinks.scss";
+import { useEffect } from "react";
 
 const NavBarLinks = ({ activeLink, setActiveLink }) => {
     const navigate = useNavigate();
-
+    
     const handleScrollToSection = (page, section) => {
         setActiveLink(section);
         navigate(page);
@@ -13,8 +14,12 @@ const NavBarLinks = ({ activeLink, setActiveLink }) => {
                 smooth: true,
                 duration: 500,
             });
-        }, 100);
+        }, 200);
     };
+
+    useEffect(() => {
+        handleScrollToSection('/', activeLink);
+    }, [])
 
     const handleLinkClick = (link) => {
         setActiveLink(link);

@@ -6,7 +6,7 @@ import "./App.scss";
 import { routes } from "./routerConfig.jsx";
 
 const App = () => {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState('profile');
   const [isSmallScreen,] = useState(window.innerWidth < 800);
   const [menuIsActive, setMenuIsActive] = useState(false);
 

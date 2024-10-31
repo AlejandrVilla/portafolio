@@ -1,5 +1,3 @@
-import "./techitem.scss";
-
 const TechItem = ( props ) => {
     return(
         <div className="icon-div">

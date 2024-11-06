@@ -6,7 +6,7 @@ const personalInfo = {
     phone: "+51 950309242",
     profile: "/img/foto3.jpg",
     github: "/icons/github.svg",
-    githubUrl: "https://github.com/AlejandrVilla",
+    githubUrl: "https://github.com/AlejandrVilla/portafolio",
     linkedin: "/icons/linkedin.svg",
     linkedinUrl: "https://www.linkedin.com/in/alejandro-villa-herrera-6b8780142/",
     frontendMentorUrl: "https://www.frontendmentor.io/profile/AlejandrVilla",

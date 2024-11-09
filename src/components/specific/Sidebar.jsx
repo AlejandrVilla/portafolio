@@ -11,7 +11,7 @@ const Sidebar = ({
     return (
         <div className="sidebar">
             <img
-                onClick={e => {
+                onClick={(e) => {
                     e.stopPropagation();
                     setMenuIsActive(!menuIsActive);
                 }}
@@ -19,17 +19,18 @@ const Sidebar = ({
                 src="/icons/menu.svg"
                 alt="menu"
             />
-            {menuIsActive &&
-                <div className="sidebar-nav-div" onClick={e => e.stopPropagation()}>
-                    <NavBarLinks
-                        activeLink={activeLink}
-                        activePage={activePage}
-                        handleScrollToSection={handleScrollToSection}
-                    />
-                </div>
-            }
+            <div
+                className={`sidebar-nav-div ${menuIsActive ? 'active' : ''}`}
+                onClick={(e) => e.stopPropagation()}
+            >
+                <NavBarLinks
+                    activeLink={activeLink}
+                    activePage={activePage}
+                    handleScrollToSection={handleScrollToSection}
+                />
+            </div>
         </div>
     );
-}
+};
 
 export default Sidebar;

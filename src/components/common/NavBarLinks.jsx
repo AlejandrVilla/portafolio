@@ -3,16 +3,14 @@ import "./navBarLinks.scss";
 
 const NavBarLinks = ({
     activeLink,
-    setActiveLink,
     activePage,
-    setActivePage,
     handleScrollToSection
 }) => {
-    const handleLinkClick = (page, link) => {
-        setActiveLink(link);
-        setActivePage(page);
-    };
-    console.log(`page ${activePage}`);
+    console.log(`page: ${activePage}`);
+    console.log(`link: ${activeLink}`);
+    console.log(window.location.pathname);
+    console.log(window.location.hash);
+    console.log(window.location.search);
 
     return (
         <nav className="nav-bar-div">
@@ -21,7 +19,6 @@ const NavBarLinks = ({
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'profile');
-                    handleLinkClick('/', 'profile');
                 }}
             >
                 <p>Home</p>
@@ -31,7 +28,6 @@ const NavBarLinks = ({
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'tech');
-                    handleLinkClick('/', 'tech');
                 }}
             >
                 <p>Technologies</p>
@@ -41,7 +37,6 @@ const NavBarLinks = ({
                 to="/"
                 onClick={() => {
                     handleScrollToSection('/', 'projects');
-                    handleLinkClick('/', 'projects');
                 }}
             >
                 <p>Projects</p>
@@ -51,7 +46,6 @@ const NavBarLinks = ({
                 to="/about"
                 onClick={() => {
                     handleScrollToSection('/about', 'about');
-                    handleLinkClick('/about', 'about')
                 }}
             >
                 <p>About</p>
@@ -61,7 +55,6 @@ const NavBarLinks = ({
                 to="/contact"
                 onClick={() => {
                     handleScrollToSection('/contact', 'contact');
-                    handleLinkClick('/contact', 'contact')
                 }}
             >
                 <p>Contact</p>

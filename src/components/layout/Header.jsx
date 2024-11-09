@@ -6,12 +6,10 @@ import Sidebar from "../specific/Sidebar.jsx";
 
 const Header = ({
     activeLink,
-    setActiveLink,
     isSmallScreen,
     menuIsActive,
     setMenuIsActive,
     activePage,
-    setActivePage,
     handleScrollToSection
 }) => {
     return (
@@ -21,19 +19,15 @@ const Header = ({
                     (
                         <Sidebar
                             activeLink={activeLink}
-                            setActiveLink={setActiveLink}
                             menuIsActive={menuIsActive}
                             setMenuIsActive={setMenuIsActive}
                             activePage={activePage}
-                            setActivePage={setActivePage}
                             handleScrollToSection={handleScrollToSection}
                         />
                     ) : (
                         <NavBarLinks
                             activeLink={activeLink}
-                            setActiveLink={setActiveLink}
                             activePage={activePage}
-                            setActivePage={setActivePage}
                             handleScrollToSection={handleScrollToSection}
                         />
                     )

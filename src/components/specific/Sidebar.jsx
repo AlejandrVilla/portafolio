@@ -3,11 +3,9 @@ import "./sidebar.scss";
 
 const Sidebar = ({
     activeLink,
-    setActiveLink,
     menuIsActive,
     setMenuIsActive,
     activePage,
-    setActivePage,
     handleScrollToSection
 }) => {
     return (
@@ -25,9 +23,7 @@ const Sidebar = ({
                 <div className="sidebar-nav-div" onClick={e => e.stopPropagation()}>
                     <NavBarLinks
                         activeLink={activeLink}
-                        setActiveLink={setActiveLink}
                         activePage={activePage}
-                        setActivePage={setActivePage}
                         handleScrollToSection={handleScrollToSection}
                     />
                 </div>

@@ -9,13 +9,14 @@ import { routes } from "./routerConfig.jsx";
 
 const App = () => {
   const navigate = useNavigate();
-  const [activePage, setActivePage] = useState('/');
-  const [activeLink, setActiveLink] = useState('profile');
+  const [activePage, setActivePage] = useState(localStorage.getItem('activePage') || '/');
+  const [activeLink, setActiveLink] = useState(localStorage.getItem('activeLink') || 'profile');
   const [isSmallScreen,] = useState(window.innerWidth < 800);
   const [menuIsActive, setMenuIsActive] = useState(false);
 
   const handleScrollToSection = (page, section) => {
     setActiveLink(section);
+    setActivePage(page);
     navigate(page);
     setTimeout(() => {
       scroller.scrollTo(section, {
@@ -24,9 +25,12 @@ const App = () => {
       });
     }, 200);
   };
+
+  // Guarda la página y sección activas en localStorage cuando cambian
   useEffect(() => {
-    handleScrollToSection(activePage, activeLink);
-  }, [])
+    localStorage.setItem('activePage', activePage);
+    localStorage.setItem('activeLink', activeLink);
+  }, [activePage, activeLink]);
 
   const closeAll = () => {
     setMenuIsActive(false);
@@ -36,12 +40,10 @@ const App = () => {
     <div className="app" onClick={closeAll}>
         <Header
           activeLink={activeLink}
-          setActiveLink={setActiveLink}
           isSmallScreen={isSmallScreen}
           menuIsActive={menuIsActive}
           setMenuIsActive={setMenuIsActive}
           activePage={activePage}
-          setActivePage={setActivePage}
           handleScrollToSection={handleScrollToSection}
         />
         <Routes>
@@ -53,10 +55,8 @@ const App = () => {
         </Routes>
         <Footer
           activeLink={activeLink}
-          setActiveLink={setActiveLink}
           isSmallScreen={isSmallScreen}
           activePage={activePage}
-          setActivePage={setActivePage}
           handleScrollToSection={handleScrollToSection}
         />
     </div>

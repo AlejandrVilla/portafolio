@@ -5,10 +5,8 @@ import "./footer.scss";
 
 const Footer = ({
     activeLink,
-    setActiveLink,
     isSmallScreen,
     activePage,
-    setActivePage,
     handleScrollToSection
 }) => {
     return (
@@ -35,9 +33,7 @@ const Footer = ({
                     !isSmallScreen &&
                     <NavBarLinks
                         activeLink={activeLink}
-                        setActiveLink={setActiveLink}
                         activePage={activePage}
-                        setActivePage={setActivePage}
                         handleScrollToSection={handleScrollToSection}
                     />
                 }

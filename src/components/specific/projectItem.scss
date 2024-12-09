@@ -20,11 +20,13 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    background-color: white;
 }
 
 .project-img{
     width: 350px;
     height: 250px;
+    object-fit: contain;
 }
 
 .project-info{

@@ -90,6 +90,15 @@ const icons = [
 
 const projects = [
     {
+        title: "Real-time object detection",
+        description: "A real-time object detection project using the websocket protocol, developed as a microservice architecture and deployed on kubernetes.",
+        tech: ["React", "Flask", "Kubernetes", "Microservices"],
+        img: "/img/arquitectura.png",
+        alt: "Cloud project",
+        liveSite: null,
+        github: "https://github.com/AlejandrVilla/cloud-project"
+    },
+    {
         title: "LLM Project",
         description: "The app responds to user prompts, a user requests for some itinerary or activities he wants and the application searches for places around him, makes some activity plans for the user.",
         tech: ["React", "Flask", "Kubernetes", "Microservices", "Open AI", "Google Maps"],
@@ -100,7 +109,7 @@ const projects = [
     },
     {
         title: "Projects in Frontend Mentor",
-        description: "My solutions to Frontend Mentor challenges",
+        description: "My solutions to Frontend Mentor challenges.",
         tech: ["HTML", "CSS", "JavaScript", "React"],
         img: "/img/frontend_mentor.png",
         alt: "Frontend Mentor",
@@ -127,7 +136,7 @@ const projects = [
     },
     {
         title: "K8S Ingress and HPA",
-        description: "Frontend and Backend developed in Flask as microservices, deployed in K8S with horizontal scaling and Ingress Nginx as load balancer",
+        description: "Frontend and Backend developed in Flask as microservices, deployed in K8S with horizontal scaling and Ingress Nginx as load balancer.",
         tech: ["K8S", "Python", "Flask"],
         img: "/img/k8s2.png",
         alt: "kubernetes",
@@ -175,19 +184,19 @@ const projects = [
 const achievements = [
     {
         title: "Scientific research and publication",
-        description: "2021 IEEE Colombian Conference on Communications and Computing (COLCOM)",
+        description: "2021 IEEE Colombian Conference on Communications and Computing (COLCOM).",
         date: "May. 2021",
         url: "https://doi.org/10.1109/COLCOM52710.2021.9486298"
     },
     {
         title: "Competitive programming workshop",
-        description: "Workshop dedicated to teaching competitive programming to university students",
+        description: "Workshop dedicated to teaching competitive programming to university students.",
         date: "Jun. 2023 - Aug. 2023",
         url: null
     },
     {
         title: "Organization of the XXIX Coneimera competitive programming contest",
-        description: "XXIX National Congress and International Exhibition of Mechanical Engineering, Mechatronics, Electrical, Electronic and Related Branches Arequipa 2023 held at the National University of San Agustin",
+        description: "XXIX National Congress and International Exhibition of Mechanical Engineering, Mechatronics, Electrical, Electronic and Related Branches Arequipa 2023 held at the National University of San Agustin.",
         date: "Aug. 2023",
         url: null
     }
@@ -196,9 +205,15 @@ const achievements = [
 const education = [
     {
         title: "Computer Science at Universidad Nacional de San Agustin",
-        description: "Studies in computer science, knowledge of data structures, algorithms, software development, parallel and distributed computing, artificial intelligence and cloud development",
+        description: "Studies in computer science, knowledge of data structures, algorithms, software development, parallel and distributed computing, artificial intelligence and cloud development.",
         date: "May. 2020 - Dec. 2024",
         url: null
+    },
+    {
+        title: "AWS Academy Graduate - AWS Academy Cloud Architecting",
+        description: "Amazon Web Services (AWS)",
+        date: "Dec. 2024",
+        url: "https://www.credly.com/badges/e97f01fa-83d3-431b-84b4-3ca7b2c4902a/linked_in_profile"
     },
     {
         title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
@@ -223,7 +238,7 @@ const education = [
 const work = [
     {
         title: "Pre-Professional Internship as DevOps Engineer",
-        description: "Developed an dmaintained continuous integration and continuous delivery (CI/CD) pipelines using tools such as Jenkins, GitLab, and GitHub Actions. Administered and optimized container orchestrators like Kubernetes to enhance application scalability and efficiency. Collaborated with development teams to implement DevOps practices and ensure high-quality software delivery",
+        description: "Developed and maintained continuous integration and continuous delivery (CI/CD) pipelines using tools such as Jenkins, GitLab, and GitHub Actions. Administered and optimized container orchestrators like Kubernetes to enhance application scalability and efficiency. Collaborated with development teams to implement DevOps practices and ensure high-quality software delivery.",
         date: "Jan. 2024 - Mar. 2024",
         url: null
     },
